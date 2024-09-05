@@ -1,0 +1,12 @@
+Personalização do Status
+
+Você pode personalizar o status do bot de várias maneiras, como:
+
+Jogando:
+await bot.change_presence(activity=nextcord.Activity(type=nextcord.ActivityType.playing, name="um jogo"))
+
+Assistindo:
+await bot.change_presence(activity=nextcord.Activity(type=nextcord.ActivityType.watching, name="Neflix"))
+
+Transmitindo:
+await bot.change_presence(activity=nextcord.Streaming(name="uma transmissão", url="http://twitch.tv/streamer"))
